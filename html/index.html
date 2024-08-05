@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>FooD Custorms</title>
+</head>
+<body>
+    <header>
+        <h1><span>F</span>oo<span>D</span> <span>C</span>ustom<span>S</span></h1>
+        <button id="ibtn-menu" class="btn-menu">&#9776;</button>
+        <nav>
+            <ul>
+                <a href="index.html"><li>INICIO</li></a>
+                <a href="#"><li>SOBRE</li></a>
+                <a href="#"><li>MENU</li></a>
+                <a href="#"><li>CONTATO</li></a>
+                <a href="#"><li><i class='bx bx-search'></i></li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="conteudo-principal">
+                <div class="container-text">
+                    <p class="text1">Welcome Food CustomS</p>
+                    <h2>Discover unique flavors for diverse palates</h2>
+                    <p class="text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequuntur natus fuga harum temporibus laborum .</p>
+                    <button>Order yours</button>
+                </div>
+                <div class="container-img">
+                    <img src="../img/hamburguer.png" alt="hamburguer dividido por ingredientes">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const btnMenu = document.getElementById('ibtn-menu');
+            const menuList = document.querySelector('header nav ul');
+
+            btnMenu.addEventListener('click', function() {
+                btnMenu.classList.toggle('active');
+                menuList.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
